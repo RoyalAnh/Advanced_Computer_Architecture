@@ -1,0 +1,262 @@
+=== MUT=mulh
+[PASS] t05_hazard.s     mulh.circ                lenh=   23 chu_ky=   33 BR_CNT=3 BR_MISS=3 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.435
+[PASS] t07_fib.s        mulh.circ                lenh=  152 chu_ky=  175 BR_CNT=25 BR_MISS=5 DC_HIT=12 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.151
+[PASS] t09_nostall.s    mulh.circ                lenh=   21 chu_ky=   34 BR_CNT=6 BR_MISS=5 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.619
+[FAIL] t10_muldiv.s     mulh.circ                lenh=   45 chu_ky=   48 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.067
+    mem[260]: mach=0x75bccf8 mong_doi=0xffffffe3
+[PASS] t12_cache.s      mulh.circ                lenh=  303 chu_ky=  367 BR_CNT=51 BR_MISS=8 DC_HIT=34 DC_MISS=5 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[PASS] t13_storefwd.s   mulh.circ                lenh=   19 chu_ky=   23 BR_CNT=1 BR_MISS=1 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[PASS] t14_irq_msip.s   mulh.circ                lenh=   43 chu_ky=   51 BR_CNT=2 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.186
+[PASS] t15_irq_timer.s  mulh.circ                lenh=   83 chu_ky=   93 BR_CNT=15 BR_MISS=3 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.12
+
+Tong: 7/8 PASS
+=== MUT=divz
+[PASS] t05_hazard.s     divz.circ                lenh=   23 chu_ky=   33 BR_CNT=3 BR_MISS=3 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.435
+[PASS] t07_fib.s        divz.circ                lenh=  152 chu_ky=  175 BR_CNT=25 BR_MISS=5 DC_HIT=12 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.151
+[PASS] t09_nostall.s    divz.circ                lenh=   21 chu_ky=   34 BR_CNT=6 BR_MISS=5 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.619
+[FAIL] t10_muldiv.s     divz.circ                lenh=   45 chu_ky=   48 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.067
+    x19: mach=0xfffffff9 mong_doi=0xffffffff
+    x20: mach=0xfffffff9 mong_doi=0xffffffff
+    x21: mach=0x0 mong_doi=0xfffffff9
+    x22: mach=0x0 mong_doi=0xfffffff9
+[PASS] t12_cache.s      divz.circ                lenh=  303 chu_ky=  367 BR_CNT=51 BR_MISS=8 DC_HIT=34 DC_MISS=5 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[PASS] t13_storefwd.s   divz.circ                lenh=   19 chu_ky=   23 BR_CNT=1 BR_MISS=1 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[PASS] t14_irq_msip.s   divz.circ                lenh=   43 chu_ky=   51 BR_CNT=2 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.186
+[PASS] t15_irq_timer.s  divz.circ                lenh=   83 chu_ky=   93 BR_CNT=15 BR_MISS=3 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.12
+
+Tong: 7/8 PASS
+=== MUT=nofill
+[PASS] t05_hazard.s     nofill.circ              lenh=   23 chu_ky=   33 BR_CNT=3 BR_MISS=3 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.435
+[PASS] t07_fib.s        nofill.circ              lenh=  152 chu_ky=  175 BR_CNT=25 BR_MISS=5 DC_HIT=12 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.151
+[PASS] t09_nostall.s    nofill.circ              lenh=   21 chu_ky=   34 BR_CNT=6 BR_MISS=5 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.619
+[PASS] t10_muldiv.s     nofill.circ              lenh=   45 chu_ky=   48 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.067
+[FAIL] t12_cache.s      nofill.circ              lenh=  303 chu_ky=  370 BR_CNT=51 BR_MISS=8 DC_HIT=33 DC_MISS=6 STALL=0 FLUSH=0 MSTALL=0 CPI=1.221
+    DCACHE hit/miss: mach=33/6 mong_doi=34/5
+[PASS] t13_storefwd.s   nofill.circ              lenh=   19 chu_ky=   23 BR_CNT=1 BR_MISS=1 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[PASS] t14_irq_msip.s   nofill.circ              lenh=   43 chu_ky=   51 BR_CNT=2 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.186
+[PASS] t15_irq_timer.s  nofill.circ              lenh=   83 chu_ky=   93 BR_CNT=15 BR_MISS=3 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.12
+
+Tong: 7/8 PASS
+=== MUT=nompie
+[PASS] t05_hazard.s     nompie.circ              lenh=   23 chu_ky=   33 BR_CNT=3 BR_MISS=3 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.435
+[PASS] t07_fib.s        nompie.circ              lenh=  152 chu_ky=  175 BR_CNT=25 BR_MISS=5 DC_HIT=12 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.151
+[PASS] t09_nostall.s    nompie.circ              lenh=   21 chu_ky=   34 BR_CNT=6 BR_MISS=5 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.619
+[PASS] t10_muldiv.s     nompie.circ              lenh=   45 chu_ky=   48 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.067
+[PASS] t12_cache.s      nompie.circ              lenh=  303 chu_ky=  367 BR_CNT=51 BR_MISS=8 DC_HIT=34 DC_MISS=5 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[PASS] t13_storefwd.s   nompie.circ              lenh=   19 chu_ky=   23 BR_CNT=1 BR_MISS=1 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[FAIL] t14_irq_msip.s   nompie.circ              lenh=   43 chu_ky=   51 BR_CNT=2 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.186
+    x11: mach=0x1880 mong_doi=0x1888
+[PASS] t15_irq_timer.s  nompie.circ              lenh=   83 chu_ky=   93 BR_CNT=15 BR_MISS=3 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.12
+
+Tong: 7/8 PASS
+=== MUT=noflush
+[FAIL] t05_hazard.s     noflush.circ             lenh=   23 chu_ky=   33 BR_CNT=3 BR_MISS=3 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.435
+    x13: mach=0x1 mong_doi=0x0
+    INSTRET: mach=90 mong_doi=87
+[FAIL] t07_fib.s        noflush.circ             lenh=  152 chu_ky=  178 BR_CNT=25 BR_MISS=5 DC_HIT=11 DC_MISS=1 STALL=0 FLUSH=0 MSTALL=0 CPI=1.171
+    x5: mach=0x179 mong_doi=0xe9
+    x7: mach=0x0 mong_doi=0x59
+    mem[0]: mach=0x1 mong_doi=0x0
+    mem[8]: mach=0x2 mong_doi=0x1
+    mem[12]: mach=0x3 mong_doi=0x2
+    mem[16]: mach=0x5 mong_doi=0x3
+    mem[20]: mach=0x8 mong_doi=0x5
+    mem[24]: mach=0xd mong_doi=0x8
+    mem[28]: mach=0x15 mong_doi=0xd
+    mem[32]: mach=0x22 mong_doi=0x15
+    mem[36]: mach=0x37 mong_doi=0x22
+    mem[40]: mach=0x59 mong_doi=0x37
+    mem[44]: mach=0x0 mong_doi=0x59
+    INSTRET: mach=221 mong_doi=216
+    DCACHE hit/miss: mach=11/1 mong_doi=12/0
+[FAIL] t09_nostall.s    noflush.circ             lenh=   21 chu_ky=   33 BR_CNT=7 BR_MISS=5 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.571
+    x12: mach=0x62 mong_doi=0x0
+    INSTRET: mach=89 mong_doi=85
+    BR_CNT: mach=7 mong_doi=6 (+1 lenh jal sang DUMP)
+[FAIL] t10_muldiv.s     noflush.circ             lenh=   45 chu_ky=   48 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.067
+    INSTRET: mach=110 mong_doi=109
+[FAIL] t12_cache.s      noflush.circ             lenh=  303 chu_ky=  376 BR_CNT=53 BR_MISS=8 DC_HIT=35 DC_MISS=5 STALL=0 FLUSH=0 MSTALL=0 CPI=1.241
+    x7: mach=0x43c mong_doi=0x23c
+    INSTRET: mach=383 mong_doi=367
+    BR_CNT: mach=53 mong_doi=51 (+1 lenh jal sang DUMP)
+    DCACHE hit/miss: mach=35/5 mong_doi=34/5
+[FAIL] t13_storefwd.s   noflush.circ             lenh=   19 chu_ky=   23 BR_CNT=1 BR_MISS=1 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+    INSTRET: mach=84 mong_doi=83
+[FAIL] t14_irq_msip.s   noflush.circ             lenh=   43 chu_ky=   51 BR_CNT=2 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.186
+    x8: mach=0x2 mong_doi=0x1
+[FAIL] t15_irq_timer.s  noflush.circ             lenh=   83 chu_ky=   93 BR_CNT=15 BR_MISS=3 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.12
+    x7: mach=0xfffffffe mong_doi=0xffffffff
+
+Tong: 0/8 PASS
+=== MUT=nostall
+[FAIL] t05_hazard.s     nostall.circ             lenh=   23 chu_ky=   29 BR_CNT=3 BR_MISS=2 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.261
+    x7: mach=0x0 mong_doi=0x22
+    x10: mach=0x1 mong_doi=0x0
+    x18: mach=0x15 mong_doi=0x22
+    INSTRET: mach=88 mong_doi=87
+[FAIL] t07_fib.s        nostall.circ             lenh=  152 chu_ky=  163 BR_CNT=25 BR_MISS=5 DC_HIT=12 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.072
+    x6: mach=0x108 mong_doi=0xe8
+[FAIL] t09_nostall.s    nostall.circ             lenh=   21 chu_ky=   32 BR_CNT=6 BR_MISS=5 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.524
+    x10: mach=0x1 mong_doi=0x8
+[PASS] t10_muldiv.s     nostall.circ             lenh=   45 chu_ky=   48 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.067
+[FAIL] t12_cache.s      nostall.circ             lenh=  303 chu_ky=  335 BR_CNT=51 BR_MISS=8 DC_HIT=34 DC_MISS=5 STALL=0 FLUSH=0 MSTALL=0 CPI=1.106
+    x10: mach=0x43c0 mong_doi=0xf0
+    x15: mach=0x43c0 mong_doi=0xf0
+    mem[64]: mach=0x43c0 mong_doi=0xf0
+[FAIL] t13_storefwd.s   nostall.circ             lenh=   19 chu_ky=   22 BR_CNT=1 BR_MISS=1 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.158
+    x15: mach=0x11b mong_doi=0xb21
+[PASS] t14_irq_msip.s   nostall.circ             lenh=   43 chu_ky=   51 BR_CNT=2 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.186
+[LOI ] t15_irq_timer.s @ nostall.circ: Command '['/workspace/btl/jre/bin/java', '-jar', '/workspace/btl/logisim.jar', '/tmp/mut/nostall.circ', '-l', '/tmp/tmpd1
+
+Tong: 2/8 PASS
+=== MUT=nofwd
+[FAIL] t05_hazard.s     nofwd.circ               lenh=   23 chu_ky=   33 BR_CNT=3 BR_MISS=3 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.435
+    x2: mach=0x4 mong_doi=0x7
+    x3: mach=0x3 mong_doi=0xa
+    x4: mach=0x0 mong_doi=0x14
+    x5: mach=0xfffffffd mong_doi=0x11
+    x6: mach=0xfffffffd mong_doi=0x11
+    x7: mach=0xfffffffa mong_doi=0x22
+    x8: mach=0xfffffffd mong_doi=0x11
+    x9: mach=0xfffffffd mong_doi=0x11
+    x15: mach=0x2 mong_doi=0x3
+    x16: mach=0xfffffffd mong_doi=0x11
+    x17: mach=0xfffffffd mong_doi=0x11
+    x18: mach=0xfffffffa mong_doi=0x22
+    mem[0]: mach=0xfffffffd mong_doi=0x11
+    mem[4]: mach=0xfffffffd mong_doi=0x11
+[FAIL] t07_fib.s        nofwd.circ               lenh=  152 chu_ky=  188 BR_CNT=27 BR_MISS=5 DC_HIT=13 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.237
+    x1: mach=0xe9 mong_doi=0x90
+    x2: mach=0x179 mong_doi=0xe9
+    x3: mach=0x34 mong_doi=0x30
+    x4: mach=0xffffffff mong_doi=0x0
+    x5: mach=0x179 mong_doi=0xe9
+    x6: mach=0x178 mong_doi=0xe8
+    x7: mach=0x90 mong_doi=0x59
+    mem[48]: mach=0x90 mong_doi=0x0
+    INSTRET: mach=228 mong_doi=216
+    BR_CNT: mach=27 mong_doi=25 (+1 lenh jal sang DUMP)
+    DCACHE hit/miss: mach=13/0 mong_doi=12/0
+[PASS] t09_nostall.s    nofwd.circ               lenh=   21 chu_ky=   34 BR_CNT=6 BR_MISS=5 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.619
+[FAIL] t10_muldiv.s     nofwd.circ               lenh=   45 chu_ky=   48 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.067
+    x5: mach=0x0 mong_doi=0xfffe1766
+    x6: mach=0x1 mong_doi=0x0
+    x7: mach=0xfffffd15 mong_doi=0x357
+    x9: mach=0xffffffff mong_doi=0xfffffffd
+    x10: mach=0xfffffd15 mong_doi=0x75bcd15
+    x14: mach=0x0 mong_doi=0x80000000
+    x23: mach=0xffffffff mong_doi=0x80000000
+    x25: mach=0x0 mong_doi=0x40000000
+    x28: mach=0xf0 mong_doi=0x75bcd15
+    x29: mach=0x1 mong_doi=0x3
+    x30: mach=0x0 mong_doi=0x40000003
+    x31: mach=0x0 mong_doi=0x80000009
+    mem[256]: mach=0x0 mong_doi=0xa1105009
+    mem[260]: mach=0x0 mong_doi=0xffffffe3
+    mem[264]: mach=0xfffffc25 mong_doi=0xffffffe3
+    mem[268]: mach=0xfffff93a mong_doi=0x75bccf8
+    mem[272]: mach=0x0 mong_doi=0xfffe1766
+    mem[276]: mach=0x1 mong_doi=0x0
+    mem[280]: mach=0xfffffd15 mong_doi=0x357
+    mem[284]: mach=0xf0 mong_doi=0x75bcd15
+[FAIL] t12_cache.s      nofwd.circ               lenh=  303 chu_ky=  170 BR_CNT=24 BR_MISS=5 DC_HIT=4 DC_MISS=6 STALL=0 FLUSH=0 MSTALL=0 CPI=0.561
+    x5: mach=0x14 mong_doi=0x10
+    x7: mach=0x2800 mong_doi=0x23c
+    x10: mach=0x0 mong_doi=0xf0
+    x12: mach=0x10 mong_doi=0x0
+    x14: mach=0x10 mong_doi=0x0
+    x15: mach=0x0 mong_doi=0xf0
+    x28: mach=0xffffffff mong_doi=0x0
+    x29: mach=0x0 mong_doi=0xf
+    mem[516]: mach=0x0 mong_doi=0x1
+    mem[520]: mach=0x0 mong_doi=0x2
+    mem[524]: mach=0x0 mong_doi=0x3
+    mem[528]: mach=0x0 mong_doi=0x4
+    mem[532]: mach=0x0 mong_doi=0x5
+    mem[536]: mach=0x0 mong_doi=0x6
+    mem[540]: mach=0x0 mong_doi=0x7
+    mem[544]: mach=0x0 mong_doi=0x8
+    mem[548]: mach=0x0 mong_doi=0x9
+    mem[552]: mach=0x0 mong_doi=0xa
+    mem[556]: mach=0x0 mong_doi=0xb
+    mem[560]: mach=0x0 mong_doi=0xc
+    mem[564]: mach=0x0 mong_doi=0xd
+    mem[568]: mach=0x0 mong_doi=0xe
+    mem[572]: mach=0x0 mong_doi=0xf
+    mem[64]: mach=0x0 mong_doi=0xf0
+    mem[8]: mach=0x2 mong_doi=0x0
+    mem[12]: mach=0x3 mong_doi=0x0
+    mem[40]: mach=0xa mong_doi=0x0
+    mem[44]: mach=0xb mong_doi=0x0
+    mem[16]: mach=0x4 mong_doi=0x0
+    mem[52]: mach=0xd mong_doi=0x0
+    mem[56]: mach=0xe mong_doi=0x0
+    mem[60]: mach=0xf mong_doi=0x0
+    mem[20]: mach=0x5 mong_doi=0x0
+    mem[4]: mach=0x1 mong_doi=0x0
+    mem[24]: mach=0x6 mong_doi=0x0
+    mem[28]: mach=0x7 mong_doi=0x0
+    mem[32]: mach=0x8 mong_doi=0x0
+    mem[36]: mach=0x9 mong_doi=0x0
+    mem[48]: mach=0xc mong_doi=0x0
+    INSTRET: mach=202 mong_doi=367
+    BR_CNT: mach=24 mong_doi=51 (+1 lenh jal sang DUMP)
+    DCACHE hit/miss: mach=4/6 mong_doi=34/5
+[PASS] t13_storefwd.s   nofwd.circ               lenh=   19 chu_ky=   23 BR_CNT=1 BR_MISS=1 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[LOI ] t14_irq_msip.s @ nofwd.circ: Command '['/workspace/btl/jre/bin/java', '-jar', '/workspace/btl/logisim.jar', '/tmp/mut/nofwd.circ', '-l', '/tmp/tmpzb0cfcq
+[LOI ] t15_irq_timer.s @ nofwd.circ: Command '['/workspace/btl/jre/bin/java', '-jar', '/workspace/btl/logisim.jar', '/tmp/mut/nofwd.circ', '-l', '/tmp/tmpzb0cfc
+
+Tong: 2/8 PASS
+=== MUT=nosfwd
+[FAIL] t05_hazard.s     nosfwd.circ              lenh=   23 chu_ky=   32 BR_CNT=3 BR_MISS=2 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.391
+    x9: mach=0x0 mong_doi=0x11
+    x10: mach=0x1 mong_doi=0x0
+    x16: mach=0x0 mong_doi=0x11
+    x17: mach=0x0 mong_doi=0x11
+    x18: mach=0x0 mong_doi=0x22
+    mem[4]: mach=0x0 mong_doi=0x11
+    INSTRET: mach=88 mong_doi=87
+[PASS] t07_fib.s        nosfwd.circ              lenh=  152 chu_ky=  175 BR_CNT=25 BR_MISS=5 DC_HIT=12 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.151
+[FAIL] t09_nostall.s    nosfwd.circ              lenh=   21 chu_ky=   33 BR_CNT=6 BR_MISS=4 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.571
+    x11: mach=0x0 mong_doi=0x7
+    x12: mach=0x61 mong_doi=0x0
+    x13: mach=0x0 mong_doi=0x1
+    mem[4]: mach=0x0 mong_doi=0x7
+    INSTRET: mach=86 mong_doi=85
+[PASS] t10_muldiv.s     nosfwd.circ              lenh=   45 chu_ky=   48 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.067
+[PASS] t12_cache.s      nosfwd.circ              lenh=  303 chu_ky=  367 BR_CNT=51 BR_MISS=8 DC_HIT=34 DC_MISS=5 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[FAIL] t13_storefwd.s   nosfwd.circ              lenh=   19 chu_ky=   23 BR_CNT=1 BR_MISS=1 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+    x12: mach=0x100 mong_doi=0xb
+    x13: mach=0x804 mong_doi=0xb16
+    x14: mach=0x10c mong_doi=0xb16
+    x15: mach=0x117 mong_doi=0xb21
+    mem[264]: mach=0x100 mong_doi=0xb
+    mem[268]: mach=0x804 mong_doi=0xb16
+    mem[272]: mach=0x10c mong_doi=0xb16
+[PASS] t14_irq_msip.s   nosfwd.circ              lenh=   43 chu_ky=   51 BR_CNT=2 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.186
+[PASS] t15_irq_timer.s  nosfwd.circ              lenh=   83 chu_ky=   93 BR_CNT=15 BR_MISS=3 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.12
+
+Tong: 5/8 PASS
+=== MUT=noirq
+[PASS] t05_hazard.s     noirq.circ               lenh=   23 chu_ky=   33 BR_CNT=3 BR_MISS=3 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.435
+[PASS] t07_fib.s        noirq.circ               lenh=  152 chu_ky=  175 BR_CNT=25 BR_MISS=5 DC_HIT=12 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.151
+[PASS] t09_nostall.s    noirq.circ               lenh=   21 chu_ky=   34 BR_CNT=6 BR_MISS=5 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.619
+[PASS] t10_muldiv.s     noirq.circ               lenh=   45 chu_ky=   48 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.067
+[PASS] t12_cache.s      noirq.circ               lenh=  303 chu_ky=  367 BR_CNT=51 BR_MISS=8 DC_HIT=34 DC_MISS=5 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[PASS] t13_storefwd.s   noirq.circ               lenh=   19 chu_ky=   23 BR_CNT=1 BR_MISS=1 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[LOI ] t14_irq_msip.s @ noirq.circ: Command '['/workspace/btl/jre/bin/java', '-jar', '/workspace/btl/logisim.jar', '/tmp/mut/noirq.circ', '-l', '/tmp/tmptunkmwa
+[LOI ] t15_irq_timer.s @ noirq.circ: Command '['/workspace/btl/jre/bin/java', '-jar', '/workspace/btl/logisim.jar', '/tmp/mut/noirq.circ', '-l', '/tmp/tmptunkmw
+
+Tong: 6/8 PASS
+=== MUT=nosquash
+[PASS] t05_hazard.s     nosquash.circ            lenh=   23 chu_ky=   33 BR_CNT=3 BR_MISS=3 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.435
+[PASS] t07_fib.s        nosquash.circ            lenh=  152 chu_ky=  175 BR_CNT=25 BR_MISS=5 DC_HIT=12 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.151
+[PASS] t09_nostall.s    nosquash.circ            lenh=   21 chu_ky=   34 BR_CNT=6 BR_MISS=5 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.619
+[PASS] t10_muldiv.s     nosquash.circ            lenh=   45 chu_ky=   48 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.067
+[PASS] t12_cache.s      nosquash.circ            lenh=  303 chu_ky=  367 BR_CNT=51 BR_MISS=8 DC_HIT=34 DC_MISS=5 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[PASS] t13_storefwd.s   nosquash.circ            lenh=   19 chu_ky=   23 BR_CNT=1 BR_MISS=1 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[PASS] t14_irq_msip.s   nosquash.circ            lenh=   43 chu_ky=   51 BR_CNT=2 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.186
+[FAIL] t15_irq_timer.s  nosquash.circ            lenh=   83 chu_ky=   93 BR_CNT=15 BR_MISS=3 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.12
+    x23: mach=0xffffffff mong_doi=0x0
+
+Tong: 7/8 PASS
