@@ -1,0 +1,44 @@
+# requires: F
+# Tap con RV32F: flw/fsw, fadd/fsub/fmul/fdiv/fsqrt, fsgnj*, fmin/fmax, feq/flt/fle, fcvt, fmv
+li s0,0x100
+li t0,0x40490fdb
+sw t0,0(s0)
+li t0,0xc0200000
+sw t0,4(s0)
+flw f1,0(s0)
+flw f2,4(s0)
+fadd.s f3,f1,f2
+fsub.s f4,f1,f2
+fmul.s f5,f1,f2
+fdiv.s f6,f1,f2
+fsqrt.s f7,f1
+fsgnj.s f8,f1,f2
+fsgnjn.s f9,f1,f2
+fsgnjx.s f10,f2,f2
+fmin.s f11,f1,f2
+fmax.s f12,f1,f2
+feq.s a0,f1,f1
+flt.s a1,f2,f1
+fle.s a2,f1,f2
+fcvt.w.s a3,f5,rtz
+fcvt.w.s a4,f6
+fcvt.w.s a5,f1,rup
+fcvt.w.s a6,f2,rdn
+li t1,-17
+fcvt.s.w f13,t1
+fcvt.s.wu f14,t1
+fmv.x.w a7,f3
+li t2,0x3f800000
+fmv.w.x f15,t2
+fadd.s f16,f15,f15
+fmul.s f17,f16,f3
+fsw f17,8(s0)
+lw s2,8(s0)
+fneg.s f18,f17
+fabs.s f19,f18
+fcvt.wu.s s3,f16
+flw f20,8(s0)
+fadd.s f21,f20,f1
+fdiv.s f22,f15,f0
+fmv.x.w s4,f22
+ecall

@@ -1,0 +1,40 @@
+# requires: M
+# RV32M: 8 lenh, gom chia cho 0 va tran (-2^31 / -1)
+li s0,0x100
+li a0,123456789
+li a1,-987
+mul t0,a0,a1
+mulh t1,a0,a1
+mulhsu t2,a1,a0
+mulhu t3,a0,a1
+sw t0,0(s0)
+sw t1,4(s0)
+sw t2,8(s0)
+sw t3,12(s0)
+div t0,a0,a1
+divu t1,a0,a1
+rem t2,a0,a1
+remu t3,a0,a1
+sw t0,16(s0)
+sw t1,20(s0)
+sw t2,24(s0)
+sw t3,28(s0)
+li a2,-7
+li a3,2
+div s1,a2,a3
+rem s2,a2,a3
+div s3,a2,x0
+divu s4,a2,x0
+rem s5,a2,x0
+remu s6,a2,x0
+li a4,0x80000000
+li a5,-1
+div s7,a4,a5
+rem s8,a4,a5
+mulh s9,a4,a4
+mulhu s10,a5,a5
+mulhsu s11,a5,a5
+mul t4,s1,s2
+add t5,t4,s9
+mul t6,t5,t5
+ecall
