@@ -1,0 +1,38 @@
+Trace pipeline t05_hazard.s tren RiscV_Pipeline.circ (moi dong = 1 chu ky; "-" = bubble)
+cyc   PC  ID                   EX                   MEM                  WB                   STALL FLUSH
+  0    0  -                    -                    -                    -                        0     0
+  1    4  addi x1, x0, 3       -                    -                    -                        0     0
+  2    8  addi x2, x1, 4       addi x1, x0, 3       -                    -                        0     0
+  3    c  add  x3, x1, x2      addi x2, x1, 4       addi x1, x0, 3       -                        0     0
+  4   10  add  x4, x3, x3      add  x3, x1, x2      addi x2, x1, 4       addi x1, x0, 3           0     0
+  5   14  sub  x5, x4, x1      add  x4, x3, x3      add  x3, x1, x2      addi x2, x1, 4           0     0
+  6   18  sw   x5, 0(x0)       sub  x5, x4, x1      add  x4, x3, x3      add  x3, x1, x2          0     0
+  7   1c  lw   x6, 0(x0)       sw   x5, 0(x0)       sub  x5, x4, x1      add  x4, x3, x3          0     0
+  8   20  add  x7, x6, x6      lw   x6, 0(x0)       sw   x5, 0(x0)       sub  x5, x4, x1          1     0
+  9   20  add  x7, x6, x6      -                    lw   x6, 0(x0)       sw   x5, 0(x0)           0     0
+ 10   24  lw   x8, 0(x0)       add  x7, x6, x6      -                    lw   x6, 0(x0)           0     0
+ 11   28  sw   x8, 4(x0)       lw   x8, 0(x0)       add  x7, x6, x6      -                        1     0
+ 12   28  sw   x8, 4(x0)       -                    lw   x8, 0(x0)       add  x7, x6, x6          0     0
+ 13   2c  lw   x9, 4(x0)       sw   x8, 4(x0)       -                    lw   x8, 0(x0)           0     0
+ 14   30  beq  x9, x5, t1      lw   x9, 4(x0)       sw   x8, 4(x0)       -                        1     0
+ 15   30  beq  x9, x5, t1      -                    lw   x9, 4(x0)       sw   x8, 4(x0)           0     0
+ 16   34  addi x10, x0, 1      beq  x9, x5, t1      -                    lw   x9, 4(x0)           0     1
+ 17   34  -                    -                    beq  x9, x5, t1      -                        0     0
+ 18   38  addi x11, x0, 2      -                    -                    beq  x9, x5, t1          0     0
+ 19   3c  jal  x12, t2         addi x11, x0, 2      -                    -                        0     0
+ 20   40  addi x13, x0, 1      jal  x12, t2         addi x11, x0, 2      -                        0     1
+ 21   44  -                    -                    jal  x12, t2         addi x11, x0, 2          0     0
+ 22   48  addi x0, x0, 5       -                    -                    jal  x12, t2             0     0
+ 23   4c  add  x14, x0, x11    addi x0, x0, 5       -                    -                        0     0
+ 24   50  addi x15, x0, 1      add  x14, x0, x11    addi x0, x0, 5       -                        0     0
+ 25   54  addi x15, x15, 1     addi x15, x0, 1      add  x14, x0, x11    addi x0, x0, 5           0     0
+ 26   58  addi x15, x15, 1     addi x15, x15, 1     addi x15, x0, 1      add  x14, x0, x11        0     0
+ 27   5c  lw   x16, 4(x0)      addi x15, x15, 1     addi x15, x15, 1     addi x15, x0, 1          0     0
+ 28   60  lw   x17, 4(x0)      lw   x16, 4(x0)      addi x15, x15, 1     addi x15, x15, 1         0     0
+ 29   64  add  x18, x16, x17   lw   x17, 4(x0)      lw   x16, 4(x0)      addi x15, x15, 1         1     0
+ 30   64  add  x18, x16, x17   -                    lw   x17, 4(x0)      lw   x16, 4(x0)          0     0
+ 31   68  ecall                add  x18, x16, x17   -                    lw   x17, 4(x0)          0     0
+ 32   6c  -                    ecall                add  x18, x16, x17   -                        0     0
+ 33   70  -                    -                    ecall                add  x18, x16, x17       0     0
+ 34   74  -                    -                    -                    ecall                    0     0
+So chu ky STALL=4, FLUSH=2

@@ -1,0 +1,26 @@
+Logisim runner: /workspace/btl/jre/bin/java -jar /workspace/btl/logisim.jar
+[MODULE] ALU        Passed 70, Failed 0
+[MODULE] ImmGen     Passed 10, Failed 0
+[MODULE] BranchUnit Passed 40, Failed 0
+[INFO] chi phi doan DUMP thanh ghi tren RiscV_SingleCycle.circ: 33 chu ky (tru ra khi bao cao)
+[INFO] chi phi doan DUMP thanh ghi tren RiscV_Pipeline.circ: 35 chu ky (tru ra khi bao cao)
+[PASS] t01_alu.s        RiscV_SingleCycle.circ   lenh=  29 chu_ky=  28
+[PASS] t01_alu.s        RiscV_Pipeline.circ      lenh=  29 chu_ky=  32
+[PASS] t02_mem.s        RiscV_SingleCycle.circ   lenh=  17 chu_ky=  16
+[PASS] t02_mem.s        RiscV_Pipeline.circ      lenh=  17 chu_ky=  20
+[PASS] t03_branch.s     RiscV_SingleCycle.circ   lenh=  45 chu_ky=  44
+[PASS] t03_branch.s     RiscV_Pipeline.circ      lenh=  45 chu_ky=  74
+[PASS] t04_jump.s       RiscV_SingleCycle.circ   lenh=  11 chu_ky=  10
+[PASS] t04_jump.s       RiscV_Pipeline.circ      lenh=  11 chu_ky=  22
+[PASS] t05_hazard.s     RiscV_SingleCycle.circ   lenh=  23 chu_ky=  22
+[PASS] t05_hazard.s     RiscV_Pipeline.circ      lenh=  23 chu_ky=  34
+[PASS] t06_upper.s      RiscV_SingleCycle.circ   lenh=   9 chu_ky=   8
+[PASS] t06_upper.s      RiscV_Pipeline.circ      lenh=   9 chu_ky=  12
+[PASS] t07_fib.s        RiscV_SingleCycle.circ   lenh= 152 chu_ky= 151
+[PASS] t07_fib.s        RiscV_Pipeline.circ      lenh= 152 chu_ky= 211
+[PASS] t08_bytehalf.s   RiscV_SingleCycle.circ   lenh=  31 chu_ky=  30
+[PASS] t08_bytehalf.s   RiscV_Pipeline.circ      lenh=  31 chu_ky=  35
+[PASS] t09_nostall.s    RiscV_SingleCycle.circ   lenh=  21 chu_ky=  20
+[PASS] t09_nostall.s    RiscV_Pipeline.circ      lenh=  21 chu_ky=  35
+
+Tong: 18/18 PASS

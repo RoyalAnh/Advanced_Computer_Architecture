@@ -1,0 +1,45 @@
+Logisim runner: /workspace/btl/jre/bin/java -jar /workspace/btl/logisim.jar
+[MODULE] RiscV_SingleCycle.circ   ALU        Passed 70, Failed 0
+[MODULE] RiscV_SingleCycle.circ   ImmGen     Passed 10, Failed 0
+[MODULE] RiscV_SingleCycle.circ   BranchUnit Passed 40, Failed 0
+[MODULE] RiscV_Pipeline.circ      ALU        Passed 70, Failed 0
+[MODULE] RiscV_Pipeline.circ      ImmGen     Passed 10, Failed 0
+[MODULE] RiscV_Pipeline.circ      BranchUnit Passed 40, Failed 0
+[INFO] RiscV_SingleCycle.circ: tinh nang=['M']; chi phi DUMP=33 chu ky (tru ra khi bao cao)
+[INFO] RiscV_Pipeline.circ: tinh nang=['CSR', 'F', 'IO', 'M']; chi phi DUMP=67 chu ky (tru ra khi bao cao)
+[PASS] t01_alu.s        RiscV_SingleCycle.circ   lenh=   29 chu_ky=   28
+[PASS] t01_alu.s        RiscV_Pipeline.circ      lenh=   29 chu_ky=   32 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.103
+[PASS] t02_mem.s        RiscV_SingleCycle.circ   lenh=   17 chu_ky=   16
+[PASS] t02_mem.s        RiscV_Pipeline.circ      lenh=   17 chu_ky=   20 BR_CNT=1 BR_MISS=1 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.176
+[PASS] t03_branch.s     RiscV_SingleCycle.circ   lenh=   45 chu_ky=   44
+[PASS] t03_branch.s     RiscV_Pipeline.circ      lenh=   45 chu_ky=   60 BR_CNT=18 BR_MISS=7 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.333
+[PASS] t04_jump.s       RiscV_SingleCycle.circ   lenh=   11 chu_ky=   10
+[PASS] t04_jump.s       RiscV_Pipeline.circ      lenh=   11 chu_ky=   22 BR_CNT=5 BR_MISS=5 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=2.0
+[PASS] t05_hazard.s     RiscV_SingleCycle.circ   lenh=   23 chu_ky=   22
+[PASS] t05_hazard.s     RiscV_Pipeline.circ      lenh=   23 chu_ky=   33 BR_CNT=3 BR_MISS=3 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.435
+[PASS] t06_upper.s      RiscV_SingleCycle.circ   lenh=    9 chu_ky=    8
+[PASS] t06_upper.s      RiscV_Pipeline.circ      lenh=    9 chu_ky=   12 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.333
+[PASS] t07_fib.s        RiscV_SingleCycle.circ   lenh=  152 chu_ky=  151
+[PASS] t07_fib.s        RiscV_Pipeline.circ      lenh=  152 chu_ky=  175 BR_CNT=25 BR_MISS=5 DC_HIT=12 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.151
+[PASS] t08_bytehalf.s   RiscV_SingleCycle.circ   lenh=   31 chu_ky=   30
+[PASS] t08_bytehalf.s   RiscV_Pipeline.circ      lenh=   31 chu_ky=   35 BR_CNT=1 BR_MISS=1 DC_HIT=14 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.129
+[PASS] t09_nostall.s    RiscV_SingleCycle.circ   lenh=   21 chu_ky=   20
+[PASS] t09_nostall.s    RiscV_Pipeline.circ      lenh=   21 chu_ky=   34 BR_CNT=6 BR_MISS=5 DC_HIT=7 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.619
+[PASS] t10_muldiv.s     RiscV_SingleCycle.circ   lenh=   45 chu_ky=   44
+[PASS] t10_muldiv.s     RiscV_Pipeline.circ      lenh=   45 chu_ky=   48 BR_CNT=1 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.067
+[PASS] t11_bploop.s     RiscV_SingleCycle.circ   lenh=  488 chu_ky=  487
+[PASS] t11_bploop.s     RiscV_Pipeline.circ      lenh=  488 chu_ky=  537 BR_CNT=141 BR_MISS=24 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.1
+[PASS] t12_cache.s      RiscV_SingleCycle.circ   lenh=  303 chu_ky=  302
+[PASS] t12_cache.s      RiscV_Pipeline.circ      lenh=  303 chu_ky=  367 BR_CNT=51 BR_MISS=8 DC_HIT=34 DC_MISS=5 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[PASS] t13_storefwd.s   RiscV_SingleCycle.circ   lenh=   19 chu_ky=   18
+[PASS] t13_storefwd.s   RiscV_Pipeline.circ      lenh=   19 chu_ky=   23 BR_CNT=1 BR_MISS=1 DC_HIT=5 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.211
+[SKIP] t14_irq_msip.s   RiscV_SingleCycle.circ   (mach khong co: CSR IO)
+[PASS] t14_irq_msip.s   RiscV_Pipeline.circ      lenh=   43 chu_ky=   51 BR_CNT=2 BR_MISS=1 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.186
+[SKIP] t15_irq_timer.s  RiscV_SingleCycle.circ   (mach khong co: CSR IO)
+[PASS] t15_irq_timer.s  RiscV_Pipeline.circ      lenh=   83 chu_ky=   93 BR_CNT=15 BR_MISS=3 DC_HIT=0 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.12
+[SKIP] t16_gpio_uart.s  RiscV_SingleCycle.circ   (mach khong co: IO)
+[PASS] t16_gpio_uart.s  RiscV_Pipeline.circ      lenh=   60 chu_ky=   76 BR_CNT=18 BR_MISS=3 DC_HIT=9 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.267
+[SKIP] t17_fp.s         RiscV_SingleCycle.circ   (mach khong co: F)
+[PASS] t17_fp.s         RiscV_Pipeline.circ      lenh=   47 chu_ky=   52 BR_CNT=1 BR_MISS=1 DC_HIT=4 DC_MISS=0 STALL=0 FLUSH=0 MSTALL=0 CPI=1.106
+
+Tong: 30/30 PASS, 4 SKIP (mach khong co tinh nang)

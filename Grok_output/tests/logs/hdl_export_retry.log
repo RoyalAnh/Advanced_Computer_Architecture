@@ -1,0 +1,30 @@
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/Control_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/RegFile_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/ImmGen_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/ALU_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/BranchUnit_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled Control/ROM_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “Control”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “Control” has 1 nets and 5 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “Control” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “RegFile”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “RegFile” has 65 nets and 38 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “RegFile” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “ImmGen”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “ImmGen” has 4 nets and 19 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “ImmGen” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “ALU”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “ALU” has 2 nets and 15 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “ALU” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “BranchUnit”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “BranchUnit” has 8 nets and 3 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “BranchUnit” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “main”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “main” has 5 nets and 54 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “main” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - The Board TERASIC_DE0 has:
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - 1 PortIo(s)
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - 14 Button(s)
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - 10 Led(s)
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - 4 SevenSegment(s)
+[main] ERROR com.cburch.logisim.fpga.gui.Reporter - Not all IO components have been mapped to the board “TERASIC_DE0”; please map all components to continue!

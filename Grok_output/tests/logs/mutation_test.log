@@ -1,0 +1,39 @@
+== MUT=noflush
+    mem[20]: mach=0x0 mong_doi=0x5
+    mem[24]: mach=0x0 mong_doi=0x8
+    mem[28]: mach=0x0 mong_doi=0xd
+    mem[32]: mach=0x0 mong_doi=0x15
+    mem[36]: mach=0x0 mong_doi=0x22
+    mem[40]: mach=0x0 mong_doi=0x37
+    mem[44]: mach=0x0 mong_doi=0x59
+[PASS] t08_bytehalf.s   noflush.circ             lenh=  31 chu_ky=  35
+[FAIL] t09_nostall.s    noflush.circ             lenh=  21 chu_ky=  34
+    x12: mach=0x62 mong_doi=0x0
+
+Tong: 4/9 PASS
+== MUT=nofwd
+    mem[12]: mach=0x32121dd mong_doi=0x432121dd
+    mem[16]: mach=0x0 mong_doi=0xffbadd00
+[FAIL] t09_nostall.s    nofwd.circ               lenh=  21 chu_ky=  34
+    x5: mach=0x0 mong_doi=0x7
+    x10: mach=0x1 mong_doi=0x8
+    x11: mach=0x0 mong_doi=0x7
+    x12: mach=0x61 mong_doi=0x0
+    x13: mach=0x0 mong_doi=0x1
+    mem[0]: mach=0x0 mong_doi=0x7
+    mem[4]: mach=0x0 mong_doi=0x7
+
+Tong: 1/9 PASS
+== MUT=nostall
+    x15: mach=0x22 mong_doi=0xffffffba
+    x16: mach=0x22 mong_doi=0xffba
+    x17: mach=0x22dd00 mong_doi=0xffbadd00
+    mem[16]: mach=0x22dd00 mong_doi=0xffbadd00
+[FAIL] t09_nostall.s    nostall.circ             lenh=  21 chu_ky=  32
+    x10: mach=0x1 mong_doi=0x8
+    x11: mach=0x0 mong_doi=0x7
+    x12: mach=0x61 mong_doi=0x0
+    x13: mach=0x0 mong_doi=0x1
+    mem[4]: mach=0x0 mong_doi=0x7
+
+Tong: 5/9 PASS
