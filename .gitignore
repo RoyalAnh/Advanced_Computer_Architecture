@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+Yêu cầu BTL.pdf
+
+# Old backup
+/Grok_output/old/
+/Grok_output/old_v2/
+
+# HDL exports and logs from the previous version
+/hdl/logisim_export/
+/hdl/logs/
+
+
