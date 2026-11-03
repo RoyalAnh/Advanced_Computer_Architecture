@@ -1,0 +1,35 @@
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/BranchUnit_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/ROM_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/InstructionDecode_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/RegisterFile_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/ALU_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/Memory_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/ImmGen_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/MainControl_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled main/ALUControl_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Labeled Memory/RAM_1
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “InstructionDecode”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “InstructionDecode” has 0 nets and 1 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “InstructionDecode” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “MainControl”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “MainControl” has 10 nets and 11 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “MainControl” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “RegisterFile”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “RegisterFile” has 35 nets and 39 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “RegisterFile” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “ImmGen”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “ImmGen” has 4 nets and 17 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “ImmGen” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “ALUControl”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “ALUControl” has 0 nets and 27 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “ALUControl” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “BranchUnit”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “BranchUnit” has 5 nets and 3 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “BranchUnit” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “ALU”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “ALU” has 2 nets and 14 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “ALU” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “Memory”
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “Memory” has 3 nets and 8 buses.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Circuit “Memory” passed DRC check.
+[main] INFO com.cburch.logisim.fpga.gui.Reporter - Building netlist for sheet “main”
