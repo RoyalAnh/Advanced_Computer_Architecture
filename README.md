@@ -1,6 +1,6 @@
 # RISC-V RV32I (+M, +CSR/ngắt, +GPIO/UART, +F tập con) trên Logisim-evolution
 
-> *English summary:* two RISC-V CPUs built in Logisim-evolution 5.x — a single-cycle RV32I+M core and a 5-stage pipelined core with forwarding, load-use stall, flush, BTB + 2-bit BHT branch prediction, a 16-line D-cache, CSR + interrupts, memory-mapped GPIO/UART and an RV32F subset. A Python assembler (`asm.py`) and an automated test runner (`run_tests.py`) that compares every circuit run against a golden ISA model are included. Works on Windows, Linux and macOS.
+> *Tóm tắt:* Hai CPU RISC-V được xây dựng trong Logisim-evolution 5.x — một nhân RV32I+M đơn chu kỳ (single-cycle) và một nhân pipelined 5 giai đoạn với tính năng forwarding, load-use stall, flush, dự đoán rẽ nhánh BTB + 2-bit BHT, D-cache 16 dòng, CSR + ngắt (interrupts), GPIO/UART ánh xạ bộ nhớ (memory-mapped) và tập hợp con RV32F. Gói sản phẩm bao gồm một Python assembler (`asm.py`) và một trình chạy kiểm thử tự động (`run_tests.py`) có chức năng so sánh mọi lần chạy mạch với một mô hình ISA chuẩn (golden ISA model). Hoạt động trên Windows, Linux và macOS.
 
 ## 1. Cấu trúc repo
 | Đường dẫn | Nội dung |
@@ -120,7 +120,3 @@ Dùng: `python cpu_gen4.py single Out.circ [prog.hex]` hoặc `python cpu_gen4.p
 
 Sửa `.circ` bằng tay (XML) dễ làm hỏng mạch; nên sửa trong Logisim hoặc sửa bộ sinh rồi sinh lại.
 
-## 7. Những gì có trong repo / bị bỏ qua
-Được đưa lên GitHub: các file `.circ`, `asm.py`, `run_tests.py`, `README.md`, `artifacts/` (tests, previews, generator, logs), `hdl/` (Verilog + script xuất HDL).
-
-Bị `.gitignore` bỏ qua (chỉ có ở máy cục bộ): `Reports/` (báo cáo, slide, video demo cá nhân), `Demo*.mp4`, `__pycache__/`, `*.pyc`, `artifacts/old/`, `artifacts/old_v2/` (bản sao lưu cũ), `hdl/logisim_export/`, `hdl/logs/`, `tools/` (JDK/jar portable nếu bạn tự đặt vào).
