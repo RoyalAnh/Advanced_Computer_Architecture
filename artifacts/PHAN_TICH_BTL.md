@@ -63,7 +63,7 @@ Thử bật "Asynchronous read" cho RAM: LW vẫn sai → lỗi nằm ở đư�
 8. Làm **bản pipeline 5 tầng**: 4 thanh ghi IF/ID, ID/EX, EX/MEM, MEM/WB; forwarding unit; hazard detection (load-use stall); flush khi branch/jump.
 9. Bộ test từng module + toàn CPU, README, báo cáo 10–20 trang, video demo.
 
-## 7. File đi kèm (thư mục `Grok_output`)
+## 7. File đi kèm (thư mục `artifacts`)
 asm.py (assembler mini), mk.py (tạo bản copy test), test1-3.s/.rom/.circ, ram_test*.txt, run_test*.log, hdl_export_attempt.log.
 Logisim trên máy bạn: `C:\Program Files\logisim-evolution\` (v5.0.0, jar: `app\logisim-evolution-5.0.0-all.jar`).
 Chạy lại test: `java -jar "C:\Program Files\logisim-evolution\app\logisim-evolution-5.0.0-all.jar" test1.circ -t table,halt --save ram.txt`

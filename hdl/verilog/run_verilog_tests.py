@@ -4,10 +4,10 @@ Dung: python run_verilog_tests.py [--root <thu muc chua run_tests.py, asm.py va 
 import sys,os,re,glob,subprocess,argparse,tempfile,shutil
 HERE=os.path.dirname(os.path.abspath(__file__))
 ap=argparse.ArgumentParser(); ap.add_argument('--root',default=os.path.abspath(os.path.join(HERE,'..','..')))
-ap.add_argument('--tests',default=None,help='thu muc chua *.s (mac dinh <root>/Grok_output/tests/programs hoac <root>/tests)')
+ap.add_argument('--tests',default=None,help='thu muc chua *.s (mac dinh <root>/artifacts/tests/programs hoac <root>/tests)')
 g=ap.parse_args()
 sys.path.insert(0,g.root); import asm, run_tests
-td=g.tests or next(d for d in (os.path.join(g.root,'Grok_output','tests','programs'),os.path.join(g.root,'tests')) if glob.glob(os.path.join(d,'*.s')))
+td=g.tests or next(d for d in (os.path.join(g.root,'artifacts','tests','programs'),os.path.join(g.root,'tests')) if glob.glob(os.path.join(d,'*.s')))
 iv=shutil.which('iverilog'); assert iv,'can iverilog trong PATH'
 tmp=tempfile.mkdtemp()
 for k,d in (('single',[]),('pipeline',['-DPIPE'])):

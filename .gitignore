@@ -1,13 +1,20 @@
+# Python cache
 __pycache__/
 *.pyc
-Yêu cầu BTL.pdf
 
-# Old backup
-/Grok_output/old/
-/Grok_output/old_v2/
+# Personal report / submission materials (local only, not published)
+Reports/
+
+# Demo videos (kept locally in Reports/)
+Demo*.mp4
+
+# Old backups of the circuits
+/artifacts/old/
+/artifacts/old_v2/
 
 # HDL exports and logs from the previous version
 /hdl/logisim_export/
 /hdl/logs/
 
-
+# Local tools (portable JDK / Logisim jar) and temp output
+/tools/

@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 HERE=os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0,HERE)
 import asm
 M=0xffffffff
-_G=os.path.join(HERE,'Grok_output','tests')
+_G=os.path.join(HERE,'artifacts','tests')
 PROGDIR=os.path.join(_G,'programs') if os.path.isdir(_G) else os.path.join(HERE,'tests')
 MODDIR=os.path.join(_G if os.path.isdir(_G) else os.path.join(HERE,'tests'),'modules')
 def sx(v,b): v&=(1<<b)-1; return v-(1<<b) if v>>(b-1) else v
@@ -196,7 +196,7 @@ def find_runner(java=None,jar=None):
     jav.append(shutil.which('java'))
     for j in jav:
         if j and (os.path.exists(j) or shutil.which(j)) and jars: return [j,'-jar',jars[0]]
-    for e in (os.environ.get('LOGISIM_EXE'),r'C:\Program Files\logisim-evolution\logisim-evolution.exe',shutil.which('logisim-evolution')):
+    for e in (os.environ.get('LOGISIM_EXE'),r'C:\Program Files\logisim-evolution\logisim-evolution.exe',shutil.which('logisim-evolution'),'/Applications/logisim-evolution.app/Contents/MacOS/logisim-evolution','/opt/logisim-evolution/bin/logisim-evolution'):
         if e and os.path.exists(e): return [e]
     raise SystemExit('Khong tim thay Java + logisim jar, cung khong thay logisim-evolution.exe. Xem README muc "Chay test".')
 _STAGE=None
