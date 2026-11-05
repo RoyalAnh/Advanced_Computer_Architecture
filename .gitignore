@@ -1,12 +1,7 @@
 # Python cache
 __pycache__/
 *.pyc
-
-# Personal report / submission materials (local only, not published)
 Reports/
-
-# Demo videos (kept locally in Reports/)
-Demo*.mp4
 
 # Old backups of the circuits
 /artifacts/old/
@@ -15,6 +10,3 @@ Demo*.mp4
 # HDL exports and logs from the previous version
 /hdl/logisim_export/
 /hdl/logs/
-
-# Local tools (portable JDK / Logisim jar) and temp output
-/tools/
